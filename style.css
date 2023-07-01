@@ -1,26 +1,32 @@
-#{
-padding:0 ;
-margin: 0 ;
-text-decoration: none;
-list-style: none;
-box-sizing: border-box;
+*{
+    text-decoration: none;
+    cursor: pointer;
 }
-body{
-    font-family:'Times New Roman', Times, serif;
+.navbar{
+    background: white;
+    font-family: Calibri;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-nav{
-    background: #0082e6;
-    height: 80px;
-    width: 100%;
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
-label.logo{
-    color: white;
+.logo a{
     font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
+    font-weight: 600;
+    color: black;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: black;
+    font-size: 18px;
     font-weight: bold;
+    margin-right: 25px;
 }
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
+
