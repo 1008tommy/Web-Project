@@ -9,16 +9,19 @@
 
     <body>
         <nav class="navbar">
-            <div class="navdiv">
-                <div class="logo"><a href="#">Logo </a> </div>
-                <ul>
-                    <li><a href="#">Catalogs</a></li>
-                    <li><a href="#">Cart</a></li>
-                    <li><a href="#">Empolyee</a></li>
-                    <li><a href="#">About us</a></li>
+                <div class="logo"><h1>Mama Express</h1></div>
+                <ul class="menu">
+                    <li><a href="">Catalogs</a></li>
+                    <li><a href=""><i class="shopping-cart">Cart</i></a></li>
+                    <li><a href="">Empolyee</a></li>
+                    <li><a href="">About us</a></li>
                 </ul>
-            </div>
-            <hr/>
+            
+            <nav/>
+
+         <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+         </div>
         </nav>
     </body>
 </html>
