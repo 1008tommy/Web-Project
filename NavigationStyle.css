@@ -1,56 +1,54 @@
 *{
 margin: 0;
-padding:0 ;
-font-family: sans-serif;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
 }
 
 body{
-height: 100%
+width: 100%;
 }
 
-.navbar{
-padding: 20px 5%;
+#header{
+padding: 20px 80px;
 display: flex;
 justify-content: space-between;
 align-items: center;
 position: sticky;
-z-index: 999;
 background-color: #f3f4f6;
-box-shadow: 0 0 14px black;
+box-shadow: 0 0px 5px black;
 }
 
-.menu-btn{
-color: grey;
-font-size: 23px;
-cursor: pointer;
-display: none;
+#header .logo a h1{
+color: black;
+text-decoration: none;
+font-weight: bold;
+border-bottom: 4px solid #FF5F1F;
+display: inline-block;
+font-size: 45px;
+transition: 0.3s ease;
 }
 
-.navbar .logo h1{
-color: grey;
-border-bottom: 4px solid orange;
+#header .logo a h1:hover{
+color: #FF5F1F;
 }
 
-.navbar .menu li{
+#header #navbar li{
 list-style: none;
 display: inline-block;
+padding: 0 20px;
 }
 
-.navbar .menu li a{
-display: block;
-margin-left: 20px;
-color: grey;
-border-bottom: 4px solid transparent;
+#header #navbar li a{
+display: flex;
+margin-left: 50px;
+color: black;
 text-decoration: none;
-font-size: 20px;
-font-weight: bold;
+font-size: 30px;
+font-weight: 600;
+transition: 0.3s ease;
 }
 
-.navbar .menu li a i{
-color: orange;
+#header #navbar li a:hover{
+color: #FF5F1F;
 }
-
-.navbar .menu li a:hover {
-border-bottom: 4px solid orange;
-}
-
