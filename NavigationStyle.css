@@ -9,44 +9,54 @@ body{
 width: 100%;
 }
 
-#header{
-padding: 20px 80px;
+#navigation{
+padding: 20px 10%;
 display: flex;
 justify-content: space-between;
 align-items: center;
 position: sticky;
 background-color: #f3f4f6;
 box-shadow: 0 0px 5px black;
+width: 100%;
 }
 
-#header .logo a h1{
+#navigation .logo a h1{
 color: black;
 text-decoration: none;
 font-weight: bold;
 border-bottom: 4px solid #FF5F1F;
 display: inline-block;
-font-size: 45px;
+font-size: 40px;
+letter-spacing: 0.2px;
 transition: 0.3s ease;
 }
 
-#header .logo a h1:hover{
+#navigation .logo a h1:hover{
 color: #FF5F1F;
 }
 
-#header #navbar li{
+#navigation #navbar li{
 list-style: none;
 display: inline-block;
 padding: 0 20px;
 }
 
-#header #navbar li a{
+#navigation #navbar li a{
 display: flex;
-margin-left: 50px;
+margin: 5px;
 color: black;
 text-decoration: none;
-font-size: 30px;
+font-size: 25px;
 font-weight: 600;
 transition: 0.3s ease;
+}
+
+#navigation #navbar li a:hover{
+color: #FF5F1F;
+}
+
+#navigation #navbar li #active {
+color: #FF5F1F;
 }
 
 #header #navbar li a:hover{
