@@ -17,10 +17,12 @@ align-items: center;
 position: sticky;
 background-color: #f3f4f6;
 box-shadow: 0 0px 5px black;
-width: 100%;
+top: 0;
+left: 0;
+z-index: 999;
 }
 
-#navigation .logo a h1{
+.logo a h1{
 color: black;
 text-decoration: none;
 font-weight: bold;
@@ -31,17 +33,17 @@ letter-spacing: 0.2px;
 transition: 0.3s ease;
 }
 
-#navigation .logo a h1:hover{
+.logo a h1:hover{
 color: #FF5F1F;
 }
 
-#navigation #navbar li{
+#navbar li{
 list-style: none;
 display: inline-block;
 padding: 0 20px;
 }
 
-#navigation #navbar li a{
+#navbar li a{
 display: flex;
 margin: 5px;
 color: black;
@@ -51,14 +53,10 @@ font-weight: 600;
 transition: 0.3s ease;
 }
 
-#navigation #navbar li a:hover{
+#navbar li a:hover{
 color: #FF5F1F;
 }
 
-#navigation #navbar li #active {
-color: #FF5F1F;
-}
-
-#header #navbar li a:hover{
+#navbar li #active {
 color: #FF5F1F;
 }
