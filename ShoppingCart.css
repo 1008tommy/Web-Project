@@ -8,6 +8,8 @@
     
     body{
     width: 100%;
+    background-color: #F2F3F5
+    ;
     }
     
     #navigation{
@@ -62,69 +64,3 @@
     color: #FF5F1F;
     }
 
-label.mycart{
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-   
-    background-color: #FF5F1F;
-    border-radius: 15px;
-    position: relative;
-    top: 100px; left: 235px;
-    padding: 35px 450px;
-}
-
-label.product1{
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-
-    background-color: #FF5F1F;
-    border-radius: 15px;
-    position: relative;
-    top: 250px; left: 235px;
-    padding: 35px 85px;
-}
-
-label.product2{
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-    
-    background-color: #FF5F1F;
-    border-radius: 15px;
-    position: relative;
-    top: 250px; left: 260px;
-    padding: 35px 85px;
-}
-
-label.product3{
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-    
-    background-color: #FF5F1F;
-    border-radius: 15px;
-    position: relative;
-    top: 250px; left: 295px;
-    padding: 35px 85px;  
-}
-
-button{
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
-
-    background-color: #FF5F1F;
-    border-radius: 15px;
-    position: relative;
-    top: 400px; left: 950px;
-    padding: 35px 64px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-button:hover{
-    color: #FF5F1F;
-    background-color: black;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
