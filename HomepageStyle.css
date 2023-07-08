@@ -3,6 +3,7 @@ margin: 0;
 padding: 0;
 font-family: Arial, Helvetica, sans-serif;
 box-sizing: border-box;
+text-decoration: none;
 }
 
 body{
@@ -17,10 +18,12 @@ align-items: center;
 position: sticky;
 background-color: #f3f4f6;
 box-shadow: 0 0px 5px black;
-width: 100%;
+top: 0;
+left: 0;
+z-index: 999;
 }
 
-#navigation .logo a h1{
+.logo a h1{
 color: black;
 text-decoration: none;
 font-weight: bold;
@@ -31,17 +34,17 @@ letter-spacing: 0.2px;
 transition: 0.3s ease;
 }
 
-#navigation .logo a h1:hover{
+.logo a h1:hover{
 color: #FF5F1F;
 }
 
-#navigation #navbar li{
+#navbar li{
 list-style: none;
 display: inline-block;
 padding: 0 20px;
 }
 
-#navigation #navbar li a{
+#navbar li a{
 display: flex;
 margin: 5px;
 color: black;
@@ -51,18 +54,101 @@ font-weight: 600;
 transition: 0.3s ease;
 }
 
-#navigation #navbar li a:hover{
+#navbar li a:hover{
 color: #FF5F1F;
 }
 
-#navigation #navbar li #active {
+#navbar li #active {
 color: #FF5F1F;
 }
+
+/* Feature Products scroll */
+
+.section-p1{
+padding: 40px 80px;
+}
+
+#product1{
+text-align: center;
+}
+
+.pro-container{
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+flex-wrap: wrap;
+}
+
+.pro{
+width: 23%;
+min-width: 250px;
+padding: 10px 12px;
+border: 1px solid #cce7d0;
+border-radius: 20px;
+cursor: pointer;
+box-shadow: 0px 1px 2px black;
+margin: 15px 0;
+transition: 0.2s ease;
+position: relative;
+}
+
+.pro:hover{
+box-shadow: 0px 1px 3px #FF5F1F;
+}
+
+.pro img{
+width: 100%;
+border-radius: 20px;
+}
+
+.pro .des{
+text-align: start;
+padding: 10px 0;
+}
+
+.pro .des span{
+color: #606063;
+font-size: 16px;
+}
+
+.pro .des h5{
+font-size: 20px;
+padding-top: 7px;
+color: #1a1a1a;
+}
+
+.pro .des h4{
+padding-top: 7px;
+font-size: 20px;
+font-weight: 600;
+color: #FF5F1F
+}
+
+#cart{
+width: 40px;
+height: 40px;
+line-height: 40px;
+border-radius: 50px;
+box-shadow: 0px 1px 3px black;
+background-color: white;
+color: #FF5F1F;
+font-size: 20px;
+transition: ease 0.3s;
+position: absolute;
+bottom: 20px;
+right: 10px
+}
+
+#cart:hover{
+background-color: #FF5F1F;
+color: white;
+}
+
 
 
 /* catalogs */
 
-#catalogs{
+#catalogues{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -76,25 +162,24 @@ padding: 2px 20px;
 margin: 20px 0px;
 }
 
-.catalogs-container{
+.catalogues-container{
 display: flex;
 margin: auto;
 width: 1200px;
-justify-content: center;
-align-items: center;
+justify-content: space-evenly;
 padding: 20px;
 box-shadow: 0 0 3px black;
 border-radius: 15px;
 background-color: #f5f5f544;
 }
 
-.catalogs-box{
+.catalogues-box{
 position: relative;
 padding: 20px;
 text-decoration: none;
 }
 
-.catalogs-box img{
+.catalogues-box img{
 width: 220px;
 height: 220px;
 object-fit: contain;
@@ -106,7 +191,7 @@ border: 1px outset black;
 transition: all ease 0.3s;
 }
 
-.catalogs-box span{
+.catalogues-box span{
 text-align: center;
 display: flex;
 justify-content: center;
@@ -114,10 +199,13 @@ align-items: center;
 font-weight: 600;
 color: black;
 text-transform: uppercase;
+padding-top: 10px ;
+font-size: 20px
 }
 
-.catalogs-box:hover img{
+.catalogues-box:hover img{
 transform: scale(1.02);
 transition: ease-in 0.2s;
 box-shadow: 2px 2px 20px #FF5F1F;
 }
+
