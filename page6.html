@@ -21,26 +21,13 @@
         border-radius: 15px;
         background-color: #F2F3F5;
         }
-
-        .Heading{
-    font-weight: 600;
-    padding: 2px 20px;
-    margin: 20px 0px;
-    }
-#catalogues{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 50px 0px;
-    flex-direction: column;
-    }
         
         h3{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         table{
-            border-spacing: 0px;
-            width: 800px;
+            border-spacing:0px;
+            width: 1000px;
             padding-left: 20px;
             padding-top: 20px;
             padding-right: 20px;
@@ -48,11 +35,42 @@
             border-radius: 20px;
             margin-left: auto;
             margin-right: auto;
-            background-color: #ffffff;
+            background-color: #bbb5b556;
             box-shadow:5px 5px 5px #1e1e1e;
+            border-style: initial;
+            height: 250px;
         }
         caption{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .Heading{
+            font-weight: 600;
+            padding: 2px 20px;
+            margin: 20px 0px;
+            box-shadow: 5px 5px 5px #1e1e1e;
+            background-color: #FF5F1F; 
+            padding: 20px; 
+            width: 500px;
+            border-radius: 20px;
+            background-image:url(companyimage.png);
+            background-repeat: no-repeat;
+            color: #ffffff;
+            text-shadow: 3px 3px 3px #000000
+        }
+        #catalogues{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px 50px 0px;
+            flex-direction: column;
+        }
+        tr{
+            height:150px;
+        }
+        .companyinfo{
+            height:250px;
+            background-image:url(companyimage2.png);
+            background-repeat: no-repeat;
         }
     </style>
 </head>
@@ -68,11 +86,11 @@
         </ul>
     </div>
     <div id="catalogues">
-    <h1 class="Heading">Company Info</h1>
+    <h1 class="Heading" align=center>Company Info</h1>
         <caption>The History of Mama Shop Delivery and How It Came To Be</caption>
                 <div class="catalogues-container">
 
-        <h3>
+        <h3 class="companyinfo">
         We started a small indie company called Mama Shop Delivery. We created a website for people online so that they 
         can buy cheap stuff in the comfort of their homes without having to travel to a nearby mama shop. So we will 
         have an employee that stays near the Mama shop. When they receive a customer order that lives nearby the Mama 
@@ -83,9 +101,8 @@
     </div>
 
     <div id="catalogues">  
-    <h1 class="Heading">Company Contact Details</h1>
+    <h1 class="Heading" align=center>Company Contact Details</h1>
     <table border="1">
-        <caption>In case you ever need to contact us :</caption>
         <tr>
         <td>
        <h3>Address</h3>
