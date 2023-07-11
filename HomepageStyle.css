@@ -64,7 +64,7 @@ body {
 
 /* Feature Products scroll */
 
-.section-p1 {
+.padding {
     padding: 40px 80px;
 }
 
@@ -78,21 +78,19 @@ body {
     gap: 2rem;
 }
 
-.container2 .arrow {
-    font-size: 2rem;
-}
-
-.pro-container {
+.container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 20px;
+    height: 500px;
     overflow-x: scroll;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.pro {
-    min-width: 24%;
-    padding: 10px 12px;
+.item {
+    width: 24%;
+    min-width: 300px;
     border: 1px solid #cce7d0;
     border-radius: 20px;
     cursor: pointer;
@@ -100,34 +98,38 @@ body {
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
+    height: 90%;
 }
 
-.pro:hover {
+.item:hover {
     box-shadow: 0px 1px 3px #FF5F1F;
 }
 
-.pro img {
-    width: 100%;
-    border-radius: 20px;
+.item img {
+    width: 220px;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    padding: 20px;
 }
 
-.pro .des {
+.item .des {
     text-align: start;
-    padding: 10px 0;
+    padding: 10px 16px;
 }
 
-.pro .des span {
+.item .des span {
     color: #606063;
     font-size: 16px;
 }
 
-.pro .des h5 {
+.item .des h5 {
     font-size: 20px;
     padding-top: 7px;
     color: #1a1a1a;
 }
 
-.pro .des h4 {
+.item .des h4 {
     padding-top: 7px;
     font-size: 20px;
     font-weight: 600;
@@ -179,9 +181,10 @@ body {
     width: 1200px;
     justify-content: space-evenly;
     padding: 20px;
-    box-shadow: 0 0 3px black;
-    border-radius: 15px;
-    background-color: #f5f5f544;
+    border: 1px solid #cce7d0;
+    box-shadow: 0px 1px 2px black;
+    border-radius: 20px;
+    background-color: white;
 }
 
 .catalogues-box {
@@ -196,10 +199,10 @@ body {
     object-fit: contain;
     object-position: center;
     padding: 20px;
-    background-color: #f3f4f6;
     overflow: hidden;
     border: 1px outset black;
     transition: all ease 0.3s;
+    border-radius: 20px;
 }
 
 .catalogues-box span {
@@ -217,5 +220,5 @@ body {
 .catalogues-box:hover img {
     transform: scale(1.02);
     transition: ease-in 0.2s;
-    box-shadow: 2px 2px 20px #FF5F1F;
+    border: 1px outset #FF5F1F;
 }
