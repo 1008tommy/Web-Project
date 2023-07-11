@@ -1,0 +1,158 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="urf-8">
+    <title>Homepage</title>
+    <meta name="viewport" conetent="width=device-width, initial-scaled=1">
+    <link rel="stylesheet" href="HomepageStyle.css">
+    <link rel="shortcut icon" href="Images/MamaShop.png" alt="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="Script.js"></script>
+</head>
+
+<body>
+    <div id="navigation">
+        <div class="logo"><a href="Homepage.html">
+                <h1>Mama<span style="color: #FF5F1F;">Express</span></h1>
+            </a></div>
+        <ul id="navbar">
+            <li><a href="index.html" id="active"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="catalogs.html"><i class="fa-solid fa-cart-shopping"></i>Products</a></li>
+            <li><a href="empolyee.html"><i class="fa-solid fa-person"></i>Employee</a></li>
+            <li><a href="aboutus.html"><i class="fa-solid fa-magnifying-glass"></i>About us</a></li>
+            <li><a href="ShoppingCart.html"><i class="fa-sharp fa-solid fa-basket-shopping"></i>Cart</a></li>
+        </ul>
+
+    </div>
+
+    <div id="product1" class="section-p1">
+        <h1>Feature products</h1>
+        <div class="container2">
+            <div class="arrow">&larr;</div>
+            <div class="pro-container">
+
+                <div class="pro">
+                    <img src="Saved Pictures/icecream.png" alt="chip">
+                    <div class="des">
+                        <span>Brand Name</span>
+                        <h5>Snack</h5>
+                        <h4>$1.50</h4>
+                    </div>
+
+                    <button onclick="addToMyCart({ name: 'Ice Cream', quantity: 1 })"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></button>
+                </div>
+
+                <div class="pro">
+                    <img src="Saved Pictures/icecream.png" alt="chip">
+                    <div class="des">
+                        <span>Brand Name</span>
+                        <h5>Snack</h5>
+                        <h4>$1.50</h4>
+                    </div>
+
+                    <a href="#"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
+
+                </div>
+
+                <div class="pro">
+                    <img src="Saved Pictures/icecream.png" alt="chip">
+                    <div class="des">
+                        <span>Brand Name</span>
+                        <h5>Snack</h5>
+                        <h4>$1.50</h4>
+                    </div>
+
+                    <a href="#"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
+
+                </div>
+
+                <div class="pro">
+                    <img src="Saved Pictures/icecream.png" alt="chip">
+                    <div class="des">
+                        <span>Brand Name</span>
+                        <h5>Snack</h5>
+                        <h4>$1.50</h4>
+                    </div>
+
+                    <a href="#"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
+
+                </div>
+
+                <div class="pro">
+                    <img src="Saved Pictures/icecream.png" alt="chip">
+                    <div class="des">
+                        <span>Brand Name</span>
+                        <h5>Snack</h5>
+                        <h4>$1.50</h4>
+                    </div>
+
+                    <a href="#"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
+
+                </div>
+
+                <div class="pro">
+                    <img src="Saved Pictures/icecream.png" alt="chip">
+                    <div class="des">
+                        <span>Brand Name</span>
+                        <h5>Snack</h5>
+                        <h4>$1.50</h4>
+                    </div>
+
+                    <a href="#"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
+
+                </div>
+            </div>
+            <div class="arrow">&rarr;</div>
+        </div>
+
+    </div>
+
+    <!-- Categories start-->
+    <div id="catalogues">
+        <h1 class="Heading">CATEGORIES</h1>
+
+        <div class="catalogues-container">
+            <!-- box starting-->
+            <a href="#" class="catalogues-box">
+                <img src="Images/Snacks.png" alt="chip">
+                <span>Snacks</span>
+            </a>
+            <!-- box ending-->
+
+            <!-- box starting-->
+            <a href="#" class="catalogues-box">
+                <img src="Images/Snacks.png" alt="chip">
+                <span>Drinks</span>
+            </a>
+            <!-- box ending-->
+
+            <!-- box starting-->
+            <a href="#" class="catalogues-box">
+                <img src="Images/Snacks.png" alt="chip">
+                <span>Basic</span>
+            </a>
+            <!-- box ending-->
+
+            <!-- box starting-->
+            <a href="#" class="catalogues-box">
+                <img src="Images/Snacks.png" alt="chip">
+                <span>Chips</span>
+            </a>
+            <!-- box ending-->
+
+        </div>
+        <!-- Categories end-->
+
+        <script>
+            function addToMyCart(item) {
+                alert("Added to cart");
+                addToCart(item)
+            }
+        </script>
+
+</body>
+
+</html>

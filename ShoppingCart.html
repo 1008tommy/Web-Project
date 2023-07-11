@@ -1,212 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="urf-8">
-        <title>Homepage</title>
-        <meta name="viewport" conetent="width=device-width, initial-scaled=1">
-        <link rel="stylesheet" href="style.css">
-        <style>
-        label.mycart{
+
+<head>
+    <meta charset="urf-8">
+    <title>Homepage</title>
+    <meta name="viewport" conetent="width=device-width, initial-scaled=1">
+    <link rel="stylesheet" href="HomepageStyle.css">
+    <script src="Script.js"></script>
+    <script defer>
+        // load cart at loading
+        window.onload = function() {
+            const items = loadCart();
+            const cart = document.getElementById("cart");
+            cart.innerHTML = items.length;
+            items.forEach(item => {
+                cart.innerHTML += `<div>${item.name}</div>`;
+            });
+        };
+    </script>
+    <style>
+        label.mycart {
             color: black;
             font-size: 40px;
             font-weight: bold;
-           
+
             background-color: rgb(223, 210, 210);
             border-radius: 15px;
             position: relative;
-            top: 50px; left: 140px;
+            top: 50px;
+            left: 140px;
             padding: 25px 75px;
         }
-        
-        label.product1{
+
+        label.product1 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-        
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 150px; left: 155px;
+            top: 150px;
+            left: 155px;
             padding: 35px 35px;
         }
-        
-        label.product2{
+
+        label.product2 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 150px; left: 185px;
+            top: 150px;
+            left: 185px;
             padding: 35px 35px;
         }
-        
-        label.product3{
+
+        label.product3 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 150px; left: 215px;
-            padding: 35px 35px;  
+            top: 150px;
+            left: 215px;
+            padding: 35px 35px;
         }
 
-        label.product4{
+        label.product4 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 150px; left: 245px;
-            padding: 35px 35px;  
+            top: 150px;
+            left: 245px;
+            padding: 35px 35px;
         }
 
-        label.product5{
+        label.product5 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 150px; left: 275px;
-            padding: 35px 35px;  
+            top: 150px;
+            left: 275px;
+            padding: 35px 35px;
         }
 
-        label.product6{
+        label.product6 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 300px; left: -988px;
-            padding: 35px 35px;  
+            top: 300px;
+            left: -988px;
+            padding: 35px 35px;
         }
 
-        label.product7{
+        label.product7 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 255px; left: 370px;
-            padding: 35px 35px;  
+            top: 255px;
+            left: 370px;
+            padding: 35px 35px;
         }
 
-        label.product8{
+        label.product8 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 255px; left: 375px;
-            padding: 35px 35px;  
+            top: 255px;
+            left: 375px;
+            padding: 35px 35px;
         }
 
-        label.product9{
+        label.product9 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 255px; left: 380px;
-            padding: 35px 35px;  
+            top: 255px;
+            left: 380px;
+            padding: 35px 35px;
         }
 
-        label.product10{
+        label.product10 {
             color: black;
             font-size: 40px;
             font-weight: bold;
-            
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: 255px; left: 500px;
-            padding: 35px 35px;  
+            top: 255px;
+            left: 500px;
+            padding: 35px 35px;
         }
-        
-        
-        button{
+
+        /*
+        button {
             color: black;
             font-size: 40px;
             font-weight: 600;
-        
+
             background-color: #FF5F1F;
             border-radius: 15px;
             position: relative;
-            top: px; left: 850px;
+            top: px;
+            left: 850px;
             padding: 20px 30px;
             transition-duration: 0.4s;
             cursor: pointer;
         }
-        button:hover{
+
+        button:hover {
             color: #FF5F1F;
             background-color: black;
             box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         }
 
-        #catalogues{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 50px 0px;
-    flex-direction: column;
-    }
+        */
 
-    #Heading{
-    font-weight: 600;
-    padding: 2px 20px;
-    margin: 20px 0px;
-    }
+        #catalogues {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px 50px 0px;
+            flex-direction: column;
+        }
 
-    #catalogues-container{
-    display: flex;
-    margin: auto;
-    width: 1200px;
-    justify-content: space-evenly;
-    padding: 20px;
-    box-shadow: 0 0 3px black;
-    border-radius: 15px;
-    background-color: #f5f5f544;
-    }
+        #Heading {
+            font-weight: 600;
+            padding: 2px 20px;
+            margin: 20px 0px;
+        }
 
-        </style>
-    </head>
+        #catalogues-container {
+            display: flex;
+            margin: auto;
+            width: 1200px;
+            justify-content: space-evenly;
+            padding: 20px;
+            box-shadow: 0 0 3px black;
+            border-radius: 15px;
+            background-color: #f5f5f544;
+            margin-top: 20px;
+        }
+    </style>
+</head>
 
-    <body>
-        <div id="navigation">
-            <div class="logo"><a href="Homepage.html"><h1>Mama<span style="color: #FF5F1F;">Express</span></h1></a></div>
-            <ul id="navbar">
-                <li><a href="Homepage.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="catalogs.html" id="active"><i class="fa-solid fa-cart-shopping"></i>Products</a></li>
-                <li><a href="empolyee.html"><i class="fa-solid fa-person"></i>Empolyee</a></li>
-                <li><a href="aboutus.html"><i class="fa-solid fa-magnifying-glass"></i>About us</a></li>
-                <li><a href="cart.html"><i class="fa-sharp fa-solid fa-basket-shopping"></i>Cart</a></li>
-            </ul>
-        </div>
+<body>
+    <div id="navigation">
+        <div class="logo"><a href="Homepage.html">
+                <h1>Mama<span style="color: #FF5F1F;">Express</span></h1>
+            </a></div>
+        <ul id="navbar">
+            <li><a href="Homepage.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="catalogs.html" id="active"><i class="fa-solid fa-cart-shopping"></i>Products</a></li>
+            <li><a href="empolyee.html"><i class="fa-solid fa-person"></i>Empolyee</a></li>
+            <li><a href="aboutus.html"><i class="fa-solid fa-magnifying-glass"></i>About us</a></li>
+            <li><a href="cart.html"><i class="fa-sharp fa-solid fa-basket-shopping"></i>Cart</a></li>
+        </ul>
+    </div>
 
-        <div id="catalogues-container">
+    <div>
+        <button onclick="addToMyCart()">Add Item</button>
+        <button onclick="loadMyCart()">Load Items</button>
+        <button>Clear Items</button>
+    </div>
+
+    <div id="catalogues-container">
         <div id="catalogues">
             <div id="Heading">
                 You have no items in your cart
             </div>
-            You currently have no products in your cart. 
+            You currently have no products in your cart.
             Look through our store, added items will appear here.
         </div>
+        <div id="cart">
+            Cart
         </div>
-        
-    </body>
+    </div>
+
+</body>
+
 </html>
