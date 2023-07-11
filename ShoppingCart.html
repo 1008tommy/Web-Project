@@ -8,183 +8,26 @@
     <link rel="stylesheet" href="HomepageStyle.css">
     <script src="Script.js"></script>
     <script defer>
-        // load cart at loading
-        window.onload = function() {
+        function loadMyCart() {
             const items = loadCart();
-            const cart = document.getElementById("cart");
-            cart.innerHTML = items.length;
+            const cart = document.getElementById("cartItems");
+            cart.innerHTML = "";
             items.forEach(item => {
-                cart.innerHTML += `<div>${item.name}</div>`;
+                cart.innerHTML +=
+                `
+                <div>
+                    <img src="${item.url}">
+                    <h1>${item.name}</h1>
+                    <p>Quantity: ${item.quantity}</p>
+                </div>
+                `;
             });
-        };
+        }
+
+        // load cart at loading
+        window.onload = loadMyCart;
     </script>
     <style>
-        label.mycart {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: rgb(223, 210, 210);
-            border-radius: 15px;
-            position: relative;
-            top: 50px;
-            left: 140px;
-            padding: 25px 75px;
-        }
-
-        label.product1 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 150px;
-            left: 155px;
-            padding: 35px 35px;
-        }
-
-        label.product2 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 150px;
-            left: 185px;
-            padding: 35px 35px;
-        }
-
-        label.product3 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 150px;
-            left: 215px;
-            padding: 35px 35px;
-        }
-
-        label.product4 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 150px;
-            left: 245px;
-            padding: 35px 35px;
-        }
-
-        label.product5 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 150px;
-            left: 275px;
-            padding: 35px 35px;
-        }
-
-        label.product6 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 300px;
-            left: -988px;
-            padding: 35px 35px;
-        }
-
-        label.product7 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 255px;
-            left: 370px;
-            padding: 35px 35px;
-        }
-
-        label.product8 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 255px;
-            left: 375px;
-            padding: 35px 35px;
-        }
-
-        label.product9 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 255px;
-            left: 380px;
-            padding: 35px 35px;
-        }
-
-        label.product10 {
-            color: black;
-            font-size: 40px;
-            font-weight: bold;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: 255px;
-            left: 500px;
-            padding: 35px 35px;
-        }
-
-        /*
-        button {
-            color: black;
-            font-size: 40px;
-            font-weight: 600;
-
-            background-color: #FF5F1F;
-            border-radius: 15px;
-            position: relative;
-            top: px;
-            left: 850px;
-            padding: 20px 30px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-
-        button:hover {
-            color: #FF5F1F;
-            background-color: black;
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        */
 
         #catalogues {
             display: flex;
@@ -216,11 +59,11 @@
 
 <body>
     <div id="navigation">
-        <div class="logo"><a href="Homepage.html">
+        <div class="logo"><a href="index.html">
                 <h1>Mama<span style="color: #FF5F1F;">Express</span></h1>
             </a></div>
         <ul id="navbar">
-            <li><a href="Homepage.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
             <li><a href="catalogs.html" id="active"><i class="fa-solid fa-cart-shopping"></i>Products</a></li>
             <li><a href="empolyee.html"><i class="fa-solid fa-person"></i>Empolyee</a></li>
             <li><a href="aboutus.html"><i class="fa-solid fa-magnifying-glass"></i>About us</a></li>
@@ -228,13 +71,8 @@
         </ul>
     </div>
 
-    <div>
-        <button onclick="addToMyCart()">Add Item</button>
-        <button onclick="loadMyCart()">Load Items</button>
-        <button>Clear Items</button>
-    </div>
-
     <div id="catalogues-container">
+    <!--
         <div id="catalogues">
             <div id="Heading">
                 You have no items in your cart
@@ -242,10 +80,22 @@
             You currently have no products in your cart.
             Look through our store, added items will appear here.
         </div>
-        <div id="cart">
+    -->
+        <div id="cartItems">
             Cart
         </div>
+
+        <div>
+            <button onclick="clearMyCart()">Clear Cart</button>
+        </div>
     </div>
+
+    <script>
+        function clearMyCart() {
+            clearCart();
+            loadMyCart();
+        }
+        </script>
 
 </body>
 
