@@ -32,6 +32,7 @@ function addToCart(item) {
 }
 
 function loadCart() {
+
     // gets cart items from the browser's local storage
     const cartItemsRaw = localStorage.getItem("cartItems");
 
@@ -42,6 +43,7 @@ function loadCart() {
 
         // returns the set of cart items
         return cartItems;
+
 
         /*
 
