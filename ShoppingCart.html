@@ -54,6 +54,27 @@
             background-color: #f5f5f544;
             margin-top: 20px;
         }
+
+        .button{
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            
+            background-color: #FF5F1F;
+            border-radius: 15px;
+            position: relative;
+            top: 150px; left: 1095px;
+            padding: 25px 45px;
+            transition-duration: 0.4s;
+        }
+
+        .button:hover{
+                background-color: white;
+                color: #FF5F1F;
+                box-shadow: 0 12px 16px 0px rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+            
+        
     </style>
 </head>
 
@@ -88,6 +109,8 @@
             <button onclick="clearMyCart()">Clear Cart</button>
         </div>
     </div>
+
+        <a href="payment.html" class="button">Checkout</a>
 
     <script>
         function clearMyCart() {

@@ -10,7 +10,172 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="Script.js"></script>
+    <style>
+        /* Feature Products scroll */
+
+        .padding {
+            padding: 40px 80px;
+        }
+
+        #product1 {
+            text-align: center;
+        }
+
+        .container2 {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            height: 500px;
+            overflow-x: scroll;
+            gap: 2rem;
+        }
+
+        .item {
+            width: 24%;
+            min-width: 300px;
+            border: 1px solid #cce7d0;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0px 1px 2px black;
+            margin: 15px 0;
+            transition: 0.2s ease;
+            position: relative;
+            height: 90%;
+        }
+
+        .item:hover {
+            box-shadow: 0px 1px 3px #FF5F1F;
+        }
+
+        .item img {
+            width: 220px;
+            height: 300px;
+            object-fit: contain;
+            object-position: center;
+            padding: 20px;
+        }
+
+        .item .des {
+            text-align: start;
+            padding: 10px 16px;
+        }
+
+        .item .des span {
+            color: #606063;
+            font-size: 16px;
+        }
+
+        .item .des h5 {
+            font-size: 20px;
+            padding-top: 7px;
+            color: #1a1a1a;
+        }
+
+        .item .des h4 {
+            padding-top: 7px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #FF5F1F
+        }
+
+
+        #cart {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50px;
+            box-shadow: 0px 1px 3px black;
+            background-color: white;
+            color: #FF5F1F;
+            font-size: 20px;
+            transition: ease 0.3s;
+            position: absolute;
+            bottom: 20px;
+            right: 10px
+        }
+
+        #cart:hover {
+            background-color: #FF5F1F;
+            color: white;
+        }
+
+
+
+        /* catalogs */
+
+        #catalogues {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px 50px 0px;
+            flex-direction: column;
+        }
+
+        .Heading {
+            font-weight: 600;
+            padding: 2px 20px;
+            margin: 20px 0px;
+        }
+
+        .catalogues-container {
+            display: flex;
+            margin: auto;
+            width: 1200px;
+            justify-content: space-evenly;
+            padding: 20px;
+            border: 1px solid #cce7d0;
+            box-shadow: 0px 1px 2px black;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        .catalogues-box {
+            position: relative;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .catalogues-box img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            object-position: center;
+            padding: 20px;
+            overflow: hidden;
+            border: 2px solid #cce7d0;
+            transition: all ease 0.3s;
+            border-radius: 20px;
+            box-shadow: 0px 1px 1px black;
+        }
+
+        .catalogues-box span {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            color: black;
+            text-transform: uppercase;
+            padding-top: 10px;
+            font-size: 20px
+        }
+
+        .catalogues-box:hover img {
+            transform: scale(1.02);
+            transition: ease-in 0.2s;
+            border: 1px outset #FF5F1F;
+        }
+
+    </style>
+    <script src="Script.js"></script>
 </head>
 
 <body>
@@ -28,7 +193,7 @@
     </div>
 
     <div id="product1" class="padding">
-        <h1>Feature products</h1>
+        <h1>Feature Products</h1>
         <div class="container2">
             <div class="container">
 
@@ -41,7 +206,9 @@
                         <h4>$1.10</h4>
                     </div>
 
-                    <button onclick="addToMyCart({ name: 'Heaven And Earth Lemon Tea', url: 'Saved Pictures/Lemontea.png', quantity: 1 })"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></button>
+                    <button
+                        onclick="addToMyCart({ name: 'Pokka Ice Lemon Tea', url: 'Saved Pictures/Lemontea.png', quantity: 1 })"><i
+                            class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></button>
                 </div>
 
                 <div class="item">
@@ -53,7 +220,7 @@
                         <h4>$2</h4>
                     </div>
 
-                    <button onclick="addToMyCart({ name: 'Doritos', url: 'Saved Pictures/Dorito.png', quantity: 1})"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></button>
+                    <button onclick="addToMyCart({ name: 'Dorito', url: 'Saved Pictures/Dorito.png', quantity: 1 })"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></button>
 
                 </div>
 
@@ -66,7 +233,8 @@
                         <h4>$4.50</h4>
                     </div>
 
-                    <button onclick="addToMyCart({ name: 'Dettol Hand Soap', url: 'Saved Pictures/DettolSoap.png', quantity: 1 })"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></button>
+                    <button onclick="addToMyCart({ name: 'Doritos', url: 'Saved Pictures/Dorito.png', quantity: 1 })"><i
+                            class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a></button>
 
                 </div>
 
@@ -79,7 +247,7 @@
                         <h4>$1.10</h4>
                     </div>
 
-                    <button onclick="addToMyCart({ name: 'Pokka Green Tea', url: 'Saved Pictures/Greantea.png', quantity: 1 })"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
 
                 </div>
 
@@ -92,7 +260,7 @@
                         <h4>$10</h4>
                     </div>
 
-                    <button onclick="addToMyCart({ name: 'Kotex Tampon', url: 'Saved Pictures/tampon.png'})"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></button>
+                    <a href="#"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
 
                 </div>
 
@@ -105,7 +273,7 @@
                         <h4>$3.50</h4>
                     </div>
 
-                    <button onclick="addToMyCart({ name: 'Nestle Mixed Ice Cream', url:'Saved Pictures/icecream.png', quantity: 1 })"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></button>
+                    <a href="#"><i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i></a>
 
                 </div>
             </div>
@@ -142,7 +310,7 @@
             <!-- box starting-->
             <a href="#" class="catalogues-box">
                 <img src="Saved Pictures/Greantea.png" alt="Drinks">
-                <span>Chips</span>
+                <span>Drinks</span>
             </a>
             <!-- box ending-->
 
