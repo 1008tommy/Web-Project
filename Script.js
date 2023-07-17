@@ -14,16 +14,6 @@ function addToCart(item) {
     // add a new cart item to the set of cart items
     cartItems.push(item);
 
-    /*
-
-    // add a new cart item to the set of cart items
-    cartItems.push({
-        name: "Item Name",
-        quantity: 10,
-    });
-
-    */
-
     // convert the set of cart items to a string
     cartItemsRaw = JSON.stringify(cartItems);
 
@@ -44,27 +34,6 @@ function loadCart() {
         // returns the set of cart items
         return cartItems;
 
-
-        /*
-
-        // create a variable to store the HTML for the cart items
-        let cartItemsHtml = "";
-
-        // loop through the cart items
-        cartItems.forEach((cartItem) => {
-            // add the HTML for the cart item to the cart items HTML variable
-            cartItemsHtml += `
-          <div>
-            <h1>${cartItem.name}</h1>
-            <p>${cartItem.quantity}</p>
-          </div>
-        `;
-        });
-
-        // add the cart items code to the division with the ID of "cart"
-        document.getElementById("cart").innerHTML = cartItemsHtml;
-
-        */
     }
     return [];
 }
