@@ -12,6 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="Script.js"></script>
     <script defer>
+
+        //Calls the loadMyCart function to retrive the items which have been chosen. CLears the existing HTMl so that when you place in more items, it will not clash with the existing HTML.
         function loadMyCart() {
             const items = loadCart();
             const cart = document.getElementById("cartItems");
