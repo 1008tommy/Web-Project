@@ -239,9 +239,45 @@ body {
 }
 
 #cartItems {
-
+    display: flex;
+    columns: 2px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* >div means anyth in that div and its children */
+#cartItems > div {
+    overflow: hidden;
+    width: 240px;
+    min-width: 300px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px black;
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    height: 90%;
+
+    
+}
+/* >div>img means inside that div that said image */
+#cartItems > div > img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+
+#clearbutton{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+
+    background-color: #FF5F1F;
+    border-radius: 15px;
+    position: relative;
+    padding: 25px 45px;
+    transition-duration: 0.4s;
 }
 
 .button {
@@ -251,9 +287,7 @@ body {
 
     background-color: #FF5F1F;
     border-radius: 15px;
-    position: relative;
-    top: 150px;
-    left: 1095px;
+    left: 100%;
     padding: 25px 45px;
     transition-duration: 0.4s;
 }

@@ -18,11 +18,16 @@
             cart.innerHTML = "";
             items.forEach(item => {
                 cart.innerHTML +=
+                //2rem 2x size 
                 `
+                
                 <div>
+                    
                     <img src="${item.url}">
-                    <h1>${item.name}</h1>
+                    <div style="margin: 2rem">
+                        <h1>${item.name}</h1>
                     <p>Quantity: ${item.quantity}</p>
+                        </div>
                 </div>
                 `;
             });
@@ -53,13 +58,14 @@
         <div id="cartItems">
             Cart
         </div>
-
-        <div>
-            <button onclick="clearMyCart()">Clear Cart</button>
-        </div>
     </div>
 
+
         <a href="payment.html" class="button">Checkout</a>
+        
+       
+            <button class="button" onclick="clearMyCart()">Clear Cart</button>
+    
 
     <script>
         function clearMyCart() {
