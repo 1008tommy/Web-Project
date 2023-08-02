@@ -270,7 +270,7 @@ body {
 
 #clearbutton{
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
 
     background-color: #FF5F1F;
@@ -282,12 +282,13 @@ body {
 
 .button {
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
 
     background-color: #FF5F1F;
     border-radius: 15px;
-    left: 100%;
+    position: relative;
+    left: 65%;
     padding: 25px 45px;
     transition-duration: 0.4s;
 }

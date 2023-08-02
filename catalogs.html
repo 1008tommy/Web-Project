@@ -124,8 +124,8 @@
         </div>
 
     </div>
-
-    <div id="product1" class="padding">
+    <a name="snacks"></a>
+      <div id="product1" class="padding">
         <h1>Snacks</h1>
         <div class="container2">
             <div class="container">
@@ -224,7 +224,7 @@
     </div>
 
     <div id="product1" class="padding">
-        <h1>Basic Necessities</h1>
+        <a name="basic"><h1>Basic Necessities</h1></a>
         <div class="container2">
             <div class="container">
 
@@ -306,6 +306,75 @@
         </div>
 
     </div>
+    <div id="product1" class="padding">
+       <a name="IceCream"> <h1>Ice Creams</h1></a>
+        <div class="container2">
+            <div class="container">
+
+                <div class="item">
+                    <img src="Saved Pictures/Vanilla Ice Cream.png" alt="Vanilla Ice Cream">
+                    <hr />
+                    <div class="des">
+                        <span>Ice Cream</span>
+                        <h5>Vanilla</h5>
+                        <h4>$2.50</h4>
+                    </div>
+
+                    <button onclick="addToMyCart({ name: 'Vanilla Ice Cream', url: 'Saved Pictures/Vanilla Ice Cream.png', quantity: 1 })">
+                        <i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i>
+                    </button>
+                </div>
+
+                <div class="item">
+                    <img src="Saved Pictures/Mini Ice cream 2.png" alt="Cornetto">
+                    <hr />
+                    <div class="des">
+                        <span>Cornetto</span>
+                        <h5>Ice Cream</h5>
+                        <h4>$1.80</h4>
+                    </div>
+
+                    <button onclick="addToMyCart({ name: 'Cornetto Ice Cream', url: 'Saved Pictures/Mini Ice cream 2.png', quantity: 1 })">
+                        <i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i>
+                    </button>
+
+                </div>
+
+                <div class="item">
+                    <img src="Saved Pictures/Mini Ice Cream.png" alt="Cornetto Mini">
+                    <hr />
+                    <div class="des">
+                        <span>Cornetto Mini</span>
+                        <h5>Ice Cream</h5>
+                        <h4>$1.30</h4>
+                    </div>
+
+                    <button onclick="addToMyCart({ name: 'Cornetto Mini', url: 'Saved Pictures/Mini Ice Cream.png', quantity: 1 })">
+                        <i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i>
+                    </button>
+
+                </div>
+
+                <div class="item">
+                    <img src="Saved Pictures/TomJerry.png" alt="Tom and Jerry Ice Cream">
+                    <hr />
+                    <div class="des">
+                        <span>Tom and Jerry</span>
+                        <h5>Vanilla Ice Cream</h5>
+                        <h4>$3.50</h4>
+                    </div>
+
+                    <button onclick="addToMyCart({ name: 'Tom and Jerry Ice Cream', url: 'Saved Pictures/TomJerry.png', quantity: 1 })">
+                        <i class="fa-sharp fa-solid fa-basket-shopping" id="cart"></i>
+                    </button>
+
+                </div>
+
+            
+                </div>
+
+            </div>
+        </div>
 
     <script>
         function addToMyCart(item) {
