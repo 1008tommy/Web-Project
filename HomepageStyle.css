@@ -246,7 +246,7 @@ body {
 }
 
 /* >div means anyth in that div and its children */
-#cartItems > div {
+#cartItems>div {
     overflow: hidden;
     width: 240px;
     min-width: 300px;
@@ -258,17 +258,18 @@ body {
     position: relative;
     height: 90%;
 
-    
+
 }
+
 /* >div>img means inside that div that said image */
-#cartItems > div > img {
+#cartItems>div>img {
     width: 100%;
     height: 300px;
     object-fit: contain;
     object-position: center;
 }
 
-#clearbutton{
+#clearbutton {
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -390,8 +391,7 @@ tr {
 .containerBima form .row {
     display: flex;
     flex-wrap: wrap;
-    gap:15px
-
+    gap: 15px
 }
 
 

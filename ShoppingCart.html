@@ -20,8 +20,8 @@
             cart.innerHTML = "";
             items.forEach(item => {
                 cart.innerHTML +=
-                //2rem 2x size 
-                `
+                    //2rem 2x size 
+                    `
                 
                 <div>
                     
@@ -49,7 +49,8 @@
         <ul id="navbar">
             <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
             <li><a href="catalogs.html"><i class="fa-solid fa-cart-shopping"></i>Products</a></li>
-            <li><a href="ShoppingCart.html" id="active"><i class="fa-sharp fa-solid fa-basket-shopping"></i>Cart</a></li>
+            <li><a href="ShoppingCart.html" id="active"><i class="fa-sharp fa-solid fa-basket-shopping"></i>Cart</a>
+            </li>
             <li><a href="companyinfo.html"><i class="fa-solid fa-magnifying-glass"></i>About us</a></li>
         </ul>
 
@@ -63,18 +64,18 @@
     </div>
 
 
-        <a href="payment.html" class="button">Checkout</a>
-        
-       
-            <button class="button" onclick="clearMyCart()">Clear Cart</button>
-    
+    <a href="payment.html" class="button">Checkout</a>
+
+
+    <button class="button" onclick="clearMyCart()">Clear Cart</button>
+
 
     <script>
         function clearMyCart() {
             clearCart();
             loadMyCart();
         }
-        </script>
+    </script>
 
 </body>
 

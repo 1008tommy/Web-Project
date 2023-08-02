@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
     <meta name="viewport" conetent="width=device-width, initial-scaled=1">
     <link rel="stylesheet" href="HomepageStyle.css">
     <link rel="shortcut icon" href="Images/MamaShop.png" alt="">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        #map{
+        #map {
             height: 400px;
             width: 1000px;
         }
     </style>
     <script>
-  (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-    key: "AIzaSyD78mDVyPHU1v3BDPqSE8FC6kdRA9bCZAo",
-    v: "weekly",
-    // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
-    // Add other bootstrap parameters as needed, using camel case.
-  });
-  // Initialize and add the map
-let map;
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+            key: "AIzaSyD78mDVyPHU1v3BDPqSE8FC6kdRA9bCZAo",
+            v: "weekly",
+            // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+            // Add other bootstrap parameters as needed, using camel case.
+        });
+        // Initialize and add the map
+        let map;
 
-async function initMap() {
-  // The location of Uluru
-  const position = { lat: 1.31826
-, lng: 103.87616
- };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+        async function initMap() {
+            // The location of Uluru
+            const position = {
+                lat: 1.31826
+                , lng: 103.87616
+            };
+            // Request needed libraries.
+            //@ts-ignore
+            const { Map } = await google.maps.importLibrary("maps");
+            const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 13,
-    center: position,
-    mapId: "DEMO_MAP_ID",
-  });
+            // The map, centered at Uluru
+            map = new Map(document.getElementById("map"), {
+                zoom: 13,
+                center: position,
+                mapId: "DEMO_MAP_ID",
+            });
 
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: position,
-    title: "Uluru",
-  });
-}
+            // The marker, positioned at Uluru
+            const marker = new AdvancedMarkerElement({
+                map: map,
+                position: position,
+                title: "Uluru",
+            });
+        }
 
-initMap();
+        initMap();
 
     </script>
 </head>
+
 <body style="background-color:#F5F5F5;color:#000000">
     <div id="navigation">
-        <div class="logo"><a href="index.html"><h1>Mama<span style="color: #FF5F1F;">Express</span></h1></a></div>
+        <div class="logo"><a href="index.html">
+                <h1>Mama<span style="color: #FF5F1F;">Express</span></h1>
+            </a></div>
         <ul id="navbar">
             <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
             <li><a href="catalogs.html"><i class="fa-solid fa-cart-shopping"></i>Products</a></li>
@@ -63,136 +70,140 @@ initMap();
         </ul>
     </div>
     <div id="catalogues">
-    <h1 class="Heading2" align=center style="background-image:url('Saved Pictures/companyimage.png');
+        <h1 class="Heading2" align=center style="background-image:url('Saved Pictures/companyimage.png');
     background-repeat: no-repeat;">Company Info</h1>
         <caption>The History of MamaExpress Delivery and How It Came To Be</caption>
-                <div class="catalogues-container3">
+        <div class="catalogues-container3">
 
-        <h3 class="companyinfo">
-        <p>
-            MamaExpress Delivery is a innovative business that surfaced in the flourishing
-            landscape of e-commerce. Founded in 2014, our company began on its mission to
-            transform the way people shop for everyday items, bringing convenience and
-            affordability to their fingertips.
-        </p>
-        <br/>
-        <p>
-            Our journey began with a straightforward idea; to close the gap between your
-            traditional mama shops, treasured neighborhood stores, and the convenience of
-            internet shopping. With a vast team of dedicated and enthusisastic individuals
-            who understand very well the value of community and client-centricity, we stepped
-            forward to create a seamless platform that would bring together customers with their
-            favorite mama shops.
-        </p>
-        <br/>
-        <p>
-            In our earlier days, MamaExpress operated from a modest office space, fueled purely
-            by the passion and determination of our small but unwavering team. We worked tirelessly
-            to construct a user-friendly website that would allow customers to browse smoothly through
-            our wide variety of products from their beloved mama shops all from the comfort of their
-            home.
-        </p>
-        <br/>
-        <p>
-            To gurantee quick and methodical delivery, we implemented a new approach. Instead of relying
-            regular logistics methods, we stationed our employees in close proximity to mama shops. This
-            strategic decision allowed us to supply lightning-fast services to customers living nearby,
-            minimizing delivery costs and times.
-        </p>
-        <br/>
-        <p>
-            Recognizing the significance of technology, we invested in cutting-edge systems to streamline
-            operations and enhance the MamaExpress experience. This allowed us to properly managed inventory
-            , trace orders, and quickly get back to client queries, nurturing a reputation for our trustability
-            and our professionalism.
-        </p>
-        <br/>
-        <p>
-            Today, MamaExpress Delivery stands as a well respected name in the e-commerce business, trusted by
-            many who rely on our platform for their everyday needs. We will continue to prosper and increase our
-            reach, with future plans of partnering with other mama shop businesses across various neighborhoods to
-            produce a diverse and sizeable product selection.
-        </p>
-        </h3>
+            <h3 class="companyinfo">
+                <p>
+                    MamaExpress Delivery is a innovative business that surfaced in the flourishing
+                    landscape of e-commerce. Founded in 2014, our company began on its mission to
+                    transform the way people shop for everyday items, bringing convenience and
+                    affordability to their fingertips.
+                </p>
+                <br />
+                <p>
+                    Our journey began with a straightforward idea; to close the gap between your
+                    traditional mama shops, treasured neighborhood stores, and the convenience of
+                    internet shopping. With a vast team of dedicated and enthusisastic individuals
+                    who understand very well the value of community and client-centricity, we stepped
+                    forward to create a seamless platform that would bring together customers with their
+                    favorite mama shops.
+                </p>
+                <br />
+                <p>
+                    In our earlier days, MamaExpress operated from a modest office space, fueled purely
+                    by the passion and determination of our small but unwavering team. We worked tirelessly
+                    to construct a user-friendly website that would allow customers to browse smoothly through
+                    our wide variety of products from their beloved mama shops all from the comfort of their
+                    home.
+                </p>
+                <br />
+                <p>
+                    To gurantee quick and methodical delivery, we implemented a new approach. Instead of relying
+                    regular logistics methods, we stationed our employees in close proximity to mama shops. This
+                    strategic decision allowed us to supply lightning-fast services to customers living nearby,
+                    minimizing delivery costs and times.
+                </p>
+                <br />
+                <p>
+                    Recognizing the significance of technology, we invested in cutting-edge systems to streamline
+                    operations and enhance the MamaExpress experience. This allowed us to properly managed inventory
+                    , trace orders, and quickly get back to client queries, nurturing a reputation for our trustability
+                    and our professionalism.
+                </p>
+                <br />
+                <p>
+                    Today, MamaExpress Delivery stands as a well respected name in the e-commerce business, trusted by
+                    many who rely on our platform for their everyday needs. We will continue to prosper and increase our
+                    reach, with future plans of partnering with other mama shop businesses across various neighborhoods
+                    to
+                    produce a diverse and sizeable product selection.
+                </p>
+            </h3>
         </div>
     </div>
-
-    <div id="catalogues">  
-    <h1 class="Heading2" align=center style="background-image:url('Saved Pictures/companyimage.png');
-    background-repeat: no-repeat;">Company Contact Details</h1>
-    <table border="1" >
-        <tr align="center">
-        <td align="center">
-       <h3>Address</h3>
-        </td>
-        <td>
-            <h3>Shun Li Industrial Complex<br/>
-                705 Sims Drive<br/>
-                #05-05<br/>
-                Singapore 387384</h3>
-        </td>
-        </tr>
-        <tr align="center">
-        <td align="center">
-            <h3>Tel</h3>
-        </td>
-        <td>
-            <h3>8630 5904</h3>
-        </td>
-        </tr>
-        <tr align="center">
-        <td align="center">
-            <h3>Email</h3>
-        </td>
-        <td>
-            <h3>vdop2345@gmail.com</h3>
-        </td>
-        </tr>
-    </table>
-    </div>
-<h2 align="center">Our Company Headquarters</h2>
-    <div id="map" style="position: relative;overflow: hidden;margin: auto;">
-
-</div>
-    <div id="catalogues">  
-        <caption><h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Operating hours</h1></caption>
-        <table border="1">
-            <tr align="center">
-            <td align="center">
-           <h3>Monday to Thursday</h3>
-            </td>
-            <td>
-                <h3>
-                    8:30am to 6:00pm
-                </h3>
-            </td>
-            </tr>
-            <tr align="center">
-            <td align="center">
-                <h3>Friday</h3>
-            </td>
-            <td>
-                <h3>8:30am to 5:30pm</h3>
-            </td>
-            </tr>
-            <tr align="center">
-            <td align="center">
-                <h3>Saturday, Sunday <br/>& Public Holidays</h3>
-            </td>
-            <td>
-                <h3>Closed</h3>
-            </td>
-            </tr>
-        </table>
-        </div>
 
     <div id="catalogues">
-        <img class="image" src="Saved Pictures/mamashop.jpg"/>
-        <br/>
+        <h1 class="Heading2" align=center style="background-image:url('Saved Pictures/companyimage.png');
+    background-repeat: no-repeat;">Company Contact Details</h1>
+        <table border="1">
+            <tr align="center">
+                <td align="center">
+                    <h3>Address</h3>
+                </td>
+                <td>
+                    <h3>Shun Li Industrial Complex<br />
+                        705 Sims Drive<br />
+                        #05-05<br />
+                        Singapore 387384</h3>
+                </td>
+            </tr>
+            <tr align="center">
+                <td align="center">
+                    <h3>Tel</h3>
+                </td>
+                <td>
+                    <h3>8630 5904</h3>
+                </td>
+            </tr>
+            <tr align="center">
+                <td align="center">
+                    <h3>Email</h3>
+                </td>
+                <td>
+                    <h3>vdop2345@gmail.com</h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h2 align="center">Our Company Headquarters</h2>
+    <div id="map" style="position: relative;overflow: hidden;margin: auto;">
+
+    </div>
+    <div id="catalogues">
+        <caption>
+            <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Operating hours</h1>
+        </caption>
+        <table border="1">
+            <tr align="center">
+                <td align="center">
+                    <h3>Monday to Thursday</h3>
+                </td>
+                <td>
+                    <h3>
+                        8:30am to 6:00pm
+                    </h3>
+                </td>
+            </tr>
+            <tr align="center">
+                <td align="center">
+                    <h3>Friday</h3>
+                </td>
+                <td>
+                    <h3>8:30am to 5:30pm</h3>
+                </td>
+            </tr>
+            <tr align="center">
+                <td align="center">
+                    <h3>Saturday, Sunday <br />& Public Holidays</h3>
+                </td>
+                <td>
+                    <h3>Closed</h3>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="catalogues">
+        <img class="image" src="Saved Pictures/mamashop.jpg" />
+        <br />
         <h4>
             Darren Chor, Our Founder.
         </h4>
-        <a class="followus" href="https://www.instagram.com/bblfatass/"target="_blank">Follow us!</a>
+        <a class="followus" href="https://www.instagram.com/bblfatass/" target="_blank">Follow us!</a>
     </div>
 </body>
+
 </html>
