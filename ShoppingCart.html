@@ -13,7 +13,7 @@
     <script src="Script.js"></script>
     <script defer>
 
-        //Calls the loadMyCart function to retrive the items which have been chosen. CLears the existing HTMl so that when you place in more items, it will not clash with the existing HTML.
+        //Calls the loadMyCart function to retrive the items which have been chosen. Clears the existing HTMl so that when you place in more items, it will not clash with the existing HTML.
         function loadMyCart() {
             const items = loadCart();
             const cart = document.getElementById("cartItems");
@@ -21,8 +21,10 @@
             items.forEach(item => {
                 cart.innerHTML +=
                     //2rem 2x size 
+
+                    //code below is a string which will make each individual item unique, allowing for each unique item to have a seperate image etc
                     `
-                
+                    
                 <div>
                     
                     <img src="${item.url}">
