@@ -270,6 +270,7 @@ body {
 }
 
 #clearbutton {
+    cursor: pointer;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -277,11 +278,14 @@ body {
     background-color: #FF5F1F;
     border-radius: 15px;
     position: relative;
+    top: 10%;
     padding: 25px 45px;
     transition-duration: 0.4s;
+    
 }
 
 .button {
+    cursor: pointer;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -461,11 +465,3 @@ tr {
     background: linear-gradient(90deg, #FF5F1F 60%, black 40.1%);
 }
 
-.containerBima {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    min-height: 100vh;
-    background: linear-gradient(90deg, #FF5F1F 60%, black 40.1%);
-}
