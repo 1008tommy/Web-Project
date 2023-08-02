@@ -427,6 +427,21 @@ tr {
     border: 1px solid #000;
 }
 
+.imageBima{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+}
+
+.imageBima img
+
+ {
+    display:flex:
+    max-width: 80%;
+    height: 150px; 
+    width: 200px;
+}
+
 .containerBima form .row .flex {
     display: flex;
     gap: 15px;
