@@ -430,7 +430,7 @@ tr {
 .imageBima{
     display:flex;
     text-align:left;
-    padding-left:25px;
+    padding-left:0px;
     padding-bottom: 20px;
     
 }
