@@ -407,6 +407,8 @@ tr {
     text-transform: uppercase;
 }
 
+
+
 .containerBima form .row .inputBox {
     margin: 15px 0;
 }
@@ -496,6 +498,20 @@ tr {
     background: #2ecc71;
 }
 
+.containerBima form .submit-btn2 {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #27ae60;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.containerBima form .submit-btn2:hover {
+    background: #2ecc71;
+}
+
 .containerBima {
     display: flex;
     justify-content: center;
@@ -504,7 +520,6 @@ tr {
     min-height: 100vh;
     background: linear-gradient(90deg, #FF5F1F 60%, black 40.1%);
 }
-
 
 .popupbima {
     display: none;
@@ -517,4 +532,3 @@ tr {
     border: 1px solid #ccc;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-
