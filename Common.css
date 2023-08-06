@@ -443,6 +443,30 @@ tr {
     width: 200px;
 }
 
+.imageBima2{
+    display:flex;
+    text-align:left;
+    padding-left:30px;
+    padding-bottom: 20px;
+    
+}
+.imageBima2 img
+
+ {
+    display: flex;
+    max-width: 80%;
+    height: 150px; 
+    width: 300px;
+}
+
+.containerBima form .row .title2 {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    padding-left: 210px;
+    text-transform: uppercase;
+}
+
 .containerBima form .row .flex {
     display: flex;
     gap: 15px;
