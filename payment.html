@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const showPopupButton = document.querySelector(".submit-btn");
+                const closePopupButton = document.querySelector(".submit-btn2");
+                const popup = document.querySelector(".popupbima");
+    
+                showPopupButton.addEventListener("click", () => {
+                    popup.style.display = "block";
+                });
+    
+                closePopupButton.addEventListener("click", () => {
+                    popup.style.display = "none";
+                });
+            });
+        </script>
+    
 </head>
 
 <body>
@@ -128,23 +146,23 @@
         </div>
         <div class="inputBox">
             <span>email :</span>
-            <input type="email" placeholder="example@example.com" required>
+            <input type="email" placeholder="example@example.com">
         </div>
         <div class="inputBox">
             <span>address :</span>
-            <input type="text" placeholder="Street-Blk number-House number" required>
+            <input type="text" placeholder="Street-Blk number-House number">
         </div>
 
         <div class="flex">
             <div class="inputBox">
                 <span>state :</span>
-                <input type="text" placeholder="Singapore" required>
+                <input type="text" placeholder="Singapore" >
             </div>
 
             <div class="flex">
                 <div class="inputBox">
                     <span>City :</span>
-                    <input type="text" placeholder="Singapore" required>
+                    <input type="text" placeholder="Singapore">
                 </div>
 
                 <div class="inputBox">
@@ -165,29 +183,29 @@
             </div>
             <div class="inputBox">
                 <span>name on card :</span>
-                <input type="text" placeholder="Johnan" required>
+                <input type="text" placeholder="Johnan">
             </div>
             <div class="inputBox">
                 <span>credit card number :</span>
-                <input type="number" placeholder="1111-2222-3333-4444" required>
+                <input type="number" placeholder="1111-2222-3333-4444">
             </div>
             <div class="inputBox">
                 <span>Date of delivery :</span>
-                <input type="text" placeholder="01/02/2023" required>
+                <input type="text" placeholder="01/02/2023">
             </div>
 
             <div class="flex">
                 <div class="inputBox">
                     <span>exp month :</span>
-                    <input type="number" placeholder="01" required>
+                    <input type="number" placeholder="01" >
                 </div>
                 <div class="inputBox">
                     <span>exp year :</span>
-                    <input type="number" placeholder="23" required>
+                    <input type="number" placeholder="23">
                 </div>
                 <div class="inputBox">
                     <span>CVV :</span>
-                    <input type="text" placeholder="1234" required>
+                    <input type="text" placeholder="1234" >
                 </div>
             </div>
 
@@ -195,10 +213,22 @@
 
     </div>
 
-    <input type="submit" value="proceed to checkout" class="submit-btn">
+    <input type="button" value="proceed to checkout" class="submit-btn">
+
+    <div class="popupbima" >
+        <img src="404-tick.png" alt="Popup Image" style="padding-left:20px;">
+        <p>Your payment has been sucsesful!</p>
+        <button class="submit-btn2">Close</button>
+    </div>
+    
+    
 
     </form>
 </div>
+</body>
+
+
+</html>
 </body>
 
 
