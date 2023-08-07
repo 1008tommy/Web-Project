@@ -10,6 +10,8 @@ function addToCart(item) {
         // convert the cart items from a string to a set of cart items
         cartItems = JSON.parse(cartItemsRaw);
     }
+     //check if browser's local storage is empty, if its not will convert to actual/usable data
+
 
     // add a new cart item to the set of cart items
     cartItems.push(item);
