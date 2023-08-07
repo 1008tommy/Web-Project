@@ -12,23 +12,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-        <script>
+        <<script>
             document.addEventListener("DOMContentLoaded", function () {
                 const showPopupButton = document.querySelector(".submit-btn");
                 const closePopupButton = document.querySelector(".submit-btn2");
                 const popup = document.querySelector(".popupbima");
-                const inputField = document.querySelector(".inputBox");
-    
+        
                 showPopupButton.addEventListener("click", () => {
                     popup.style.display = "block";
                 });
-    
+        
                 closePopupButton.addEventListener("click", () => {
-                popup.style.display = "none";
-                location.href = "index.html";
+                    popup.style.display = "none";
+                    location.href = "index.html";
+                });
             });
-        });
         </script>
+        
     
 </head>
 
@@ -206,7 +206,7 @@
                     <input type="number" placeholder="23"required>
                 </div>
                 <div class="inputBox">
-                    <span>CVV :</span>
+                    <span>CVVE :</span>
                     <input type="text" placeholder="1234" required>
                 </div>
             </div>

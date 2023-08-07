@@ -436,7 +436,7 @@ tr {
 .imageBima img
 
  {
-    display:flex:
+    display:flex;
     max-width: 80%;
     height: 150px; 
     width: 200px;
