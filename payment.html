@@ -13,10 +13,11 @@
 
 
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const showPopupButton = document.querySelector(".submit-btn");
-                const closePopupButton = document.querySelector(".submit-btn2");
-                const popup = document.querySelector(".popupbima");
+          document.addEventListener("DOMContentLoaded", function () {
+            const showPopupButton = document.querySelector(".showPopupButton");
+            const closePopupButton = document.querySelector(".closePopupButton");
+            const popup = document.querySelector(".popup");
+            const inputField = document.querySelector(".inputField");
     
                 showPopupButton.addEventListener("click", () => {
                     popup.style.display = "block";
