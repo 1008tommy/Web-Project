@@ -14,10 +14,10 @@
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-            const showPopupButton = document.querySelector(".showPopupButton");
-            const closePopupButton = document.querySelector(".closePopupButton");
-            const popup = document.querySelector(".popup");
-            const inputField = document.querySelector(".inputField");
+                const showPopupButton = document.querySelector(".submit-btn");
+                const closePopupButton = document.querySelector(".submit-btn2");
+                const popup = document.querySelector(".popupbima");
+                const inputField = document.querySelector(".inputBox");
     
                 showPopupButton.addEventListener("click", () => {
                     popup.style.display = "block";
@@ -25,18 +25,10 @@
     
                 closePopupButton.addEventListener("click", () => {
                 popup.style.display = "none";
-                closePopupButton.addEventListener("click", () => {
-                const inputValue = inputField.value.trim();
-                if (inputValue !== "") {
-                    popup.style.display = "none";
-                    location.href = "index.html";
-                } else {
-                    alert("Please fill out the input box.");
-                }
+                location.href = "index.html";
             });
         });
-    </script>
-          
+        </script>
     
 </head>
 
